@@ -46,7 +46,6 @@ myApp.controller('myAppController', function($scope, $http){
 
 	$http.get('https://jsonplaceholder.typicode.com/posts').then(function(response){
 		$scope.posts = response.data;
-		console.log(response.data);
 	});
 });
 </script>
