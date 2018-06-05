@@ -1,0 +1,18 @@
+body{
+	background: linear-gradient(to right, #b59eff, #ff7a7a);
+}
+*, h1{
+	font-family: Quicksand;
+	color: white;
+}
+li{
+	list-style-type: none;
+	font-size: 24pt;
+}
+p{
+	font-size: 12pt;
+}
+h1{
+	font-weight: inherit;
+	text-align: center;
+}
