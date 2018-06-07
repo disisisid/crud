@@ -1,6 +1,6 @@
 body{
 	background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-	text-align:
+	text-align: center;
 	color: white;
 }
 *, h1{
@@ -16,7 +16,6 @@ p{
 }
 h1{
 	font-weight: inherit;
-	text-align: center;
 }
 a, ul{
 	text-decoration: none;
