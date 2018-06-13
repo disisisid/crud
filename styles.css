@@ -1,22 +1,52 @@
 body{
 	background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-	text-align: center;
 	color: white;
 }
+
 *, h1{
 	font-family: Quicksand;
 	color: white;
 }
+
 li{
 	list-style-type: none;
 	font-size: 18pt;
 }
+
 p{
 	font-size: 12pt;
 }
+
 h1{
 	font-weight: inherit;
+	text-align: center;
 }
+
 a, ul{
 	text-decoration: none;
 }
+
+input{
+	border: none;
+	margin: auto;
+	color: white;
+	background: inherit;
+}
+
+input:focus{
+	outline-width: 0;
+}
+
+::-webkit-input-placeholder{
+	color: white;
+}
+
+#search_field{
+	margin-left: 40px;
+}
+
+/*
+.container, #search_field, .wrapper, li{
+	border: 1px solid white;
+}
+*/
