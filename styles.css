@@ -50,3 +50,6 @@ input:focus{
 	border: 1px solid white;
 }
 */
+li:hover{
+	color: maroon;
+}
