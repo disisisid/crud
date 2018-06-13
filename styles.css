@@ -22,7 +22,7 @@ h1{
 	text-align: center;
 }
 
-a, ul{
+.wrapper ul a{
 	text-decoration: none;
 }
 
