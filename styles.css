@@ -11,6 +11,7 @@ body{
 li{
 	list-style-type: none;
 	font-size: 18pt;
+	display: inline-block;
 }
 
 p{
