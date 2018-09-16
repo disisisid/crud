@@ -1,5 +1,5 @@
 body{
-	background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+	background: linear-gradient(to right, #00ae7b, #0081bf);
 	color: white;
 }
 
@@ -52,5 +52,5 @@ input:focus{
 }
 */
 li:hover{
-	color: maroon;
+	color: yellow;
 }
