@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
+  	<link rel="stylesheet" href="./assets/bootstrap.min.css">
+	  <script src="./assets/angular.min.js"></script>
+	  <script src="app.js"></script>
+	  <script src="./assets/jquery.min.js"></script>
+		<script src="./assets/bootstrap.min.js"></script>
+		<title>Hacker News</title>
+	</head>
+	<body>
+	<div class="container" ng-controller="myAppController">
+		<h1>Hacker News</h1>
+		<div id="search_field" class="form-group">
+			<input ng-model="search" autofocus placeholder="s e a r c h"/>
+		</div>
+		<div class="pagination-div">
+			<nav aria-label="Page navigation example">
+			  <ul class="pagination">
+			    <li class="page-item"><a class="page-link" href="second_page.html">Previous</a></li>
+			    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+			    <li class="page-item"><a class="page-link" href="second_page.html">2</a></li>
+			    <li class="page-item"><a class="page-link" href="third_page.html">3</a></li>
+			    <li class="page-item"><a class="page-link" href="forth_page.html">4</a></li>
+			    <li class="page-item"><a class="page-link" href="fifth_page.html">5</a></li>
+			    <li class="page-item"><a class="page-link" href="forth_page.html">Next</a></li>
+			  </ul>
+			</nav>
+		</div>
+		<div class="wrapper" id="page-three-news">
+			<ul ng-repeat="post in posts | filter: search">
+				<a href="{{post.url}}" target="_blank"><li>{{post.title}}</li></a>
+			<ul>
+		</div>
+	</div>
+	</body>
+</html>
