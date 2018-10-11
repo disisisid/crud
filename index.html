@@ -2,13 +2,16 @@
 <html ng-app="myApp">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="styles.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Quicksand" />
-  	<link rel="stylesheet" href="./assets/bootstrap.min.css">
-	  <script src="./assets/angular.min.js"></script>
+		<link rel="stylesheet" href="./assets/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<link rel="icon" href="favicon.ico" type="image/icon" sizes="16x16">
+		<script src="./assets/angular.min.js"></script>
+	  <script src="./assets/dirPagination.js"></script>
 	  <script src="app.js"></script>
 	  <script src="./assets/jquery.min.js"></script>
-		<script src="./assets/bootstrap.min.js"></script>
+	  <script src="./assets/bootstrap.min.js"></script>
+
 		<title>Hacker News</title>
 	</head>
 	<body>
@@ -18,10 +21,19 @@
 			<input ng-model="search" autofocus placeholder="s e a r c h"/>
 		</div>
 		<div class="wrapper">
-			<ul ng-repeat="post in posts | filter: search">
+			<ul dir-paginate="post in posts | filter: search | itemsPerPage:8">
 				<a href="{{post.url}}" target="_blank"><li>{{post.title}}</li></a>
 			<ul>
 		</div>
+
+		<!-- Pagination controls -->
+                        
+		<dir-pagination-controls
+			max-size="20"
+			direction-links="true"
+			boundary-links="true">
+		</dir-pagination-controls> 
+
 	</div>
 	</body>
 </html>

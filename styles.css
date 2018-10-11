@@ -1,6 +1,7 @@
 body{
 	background: linear-gradient(to right, #00ae7b, #0081bf);
 	color: white;
+	user-select: none;
 }
 
 *, h1{
@@ -12,6 +13,7 @@ li{
 	list-style-type: none;
 	font-size: 18pt;
 	display: inline-block;
+	color: white;
 }
 
 p{
@@ -53,4 +55,11 @@ input:focus{
 */
 li:hover{
 	color: yellow;
+}
+
+/* Pagination Controls */
+a{
+	color: #ddef80 !important;
+    text-decoration: none;
+	padding: 0 3px;
 }
